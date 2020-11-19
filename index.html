@@ -67,251 +67,40 @@
         <!-- SLIDE 3 -->
         <section>
             <h2>Fork and Clone</h2>
-            <ul>
-                <li class="fragment">Common location for sharing code for use across all Apache projects.</li>
-                <li class="fragment">Was jakarta commons (jakarta being the apache java project).
-                    <ul>
-                        <li class="fragment"><em>Note.</em> The Eclipse Foundation has recently (September 10, 2019)
-                        co-opted the name for their Java EE work. (We at Apache are supportive of this as well)</li>
-                    </ul>
-                </li>
-            </ul>
+            <img class="fragment" src="./images/fork-and-clone.png">
         </section>
 
         <!-- SLIDE 4 -->
         <section>
-            <h2>What is the <a href="http://commons.apache.org">Apache Commons Project</a>?</h2>
+            <h2>What do our standard words mean?</h2>
             <ul>
-                <li class="fragment"><strong>Current mission:</strong> Provide a place for other ASF projects to
-                    come together, collaborate and share
-                    common code.</li>
-                <li class="fragment">Committers from <em>any</em> Apache project can request commit privileges.</li>
+                <li class="fragment"><pre>git checkout ${branch_name}</pre> - move to a branch of name "<code>${branchname}</code>"
+                    <ul>
+                        <li class="fragment"><pre>git checkout -b ${branch_name}</pre> - creates a new branch of name "<code>${branchname}</code>"</li>
+                    </ul>
+                </li>
             </ul>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
         </section>
 
         <!-- SLIDE 5 -->
         <section>
-            <h2>Apache Commons Today</h2>
+            <h2>What do our standard words mean?</h2>
             <ul>
-                <li class="fragment">A collection of 33 independent java projects.</li>
-                <li class="fragment">The most popular projects are (based on <a href="https://github.com/search?o=desc&p=2&q=apache+commons&s=stars&type=Repositories">github's stars</a>):
+                <li class="fragment"><pre>git commit -m "some message"</pre> - makes a local commit of the code</code>"
                     <ul>
-                        <li class="fragment">commons-lang3</li>
-                        <li class="fragment">commons-io</li>
-                        <li class="fragment">commons-collections</li>
-                        <li class="fragment">commons-math</li>
-                        <li class="fragment">commons-pool</li>
+                        <li class="fragment">How do I get this code to where others can see it?</li>
                     </ul>
                 </li>
-
+                <li class="fragment"><pre>git push ${remote_name} ${branch_name}</pre></li>
             </ul>
         </section>
 
         <!-- SLIDE 6 -->
         <section>
-            <h2>What are the benefits of open source software?</h2>
-            <ul>
-                <li class="fragment">Standardization of libraries.</li>
-                <li class="fragment">More eyes = fewer bugs.</li>
-                <li class="fragment">Long term support.</li>
-            </ul>
+            <h2>Let's do some actual work...</h2>
         </section>
 
-        <!-- SLIDE 7 -->
-        <section>
-            <h2>[Benedikt] Ritter's Law</h2>
-            <p class="fragment">
-                Everything that is not part of our domain/business logic or the crazy legacy
-                systems with which we need to integrate has already been developed by somebody
-                much smarter than we are....
-            </p>
-            <p class="fragment">
-                <strong>Don't re-invent the wheel!</strong>
-            </p>
-        </section>
 
-        <!-- SLIDE 8 -->
-        <section>
-            <h2>Why did I get involved?</h2>
-            <ol>
-                <li class="fragment">I thought that I would have "spare time" during the paternity leave for my second daughter's birth.</li>
-                <li class="fragment">To keep my mathematics sharp(er).</li>
-                <li class="fragment">Career advancement?</li>
-                <li class="fragment">You're not constrained by timelines...you can get it right.</li>
-            </ol>
-        </section>
-
-        <!-- SLIDE 9 -->
-        <section>
-            <h2>Ok, so what do you do to get involved?</h2>
-            <ol>
-                <li class="fragment">Pick a subject that you're passionate about.</li>
-                <li class="fragment">Pick a project that you already work with regularly.</li>
-                <li class="fragment">If it's on git check the stats page to see who
-                    frequent committers are. For example consider
-                    <a href="https://github.com/apache/commons-lang/graphs/contributors">this github
-                        contributors page</a></li>
-            </ol>
-        </section>
-
-        <!-- SLIDE 10 -->
-        <section>
-            <p>
-                <img src="images/commons-lang-contributors.png" style="max-width: 600px;"/>
-            </p>
-        </section>
-
-        <!-- SLIDE 11 -->
-        <section>
-            <h2>How to ask people what to work on?</h2>
-            <ol>
-                <li class="fragment">Find emails or mailing lists.</li>
-                <ul>
-                    <li class="fragment">For example consider this link from the <code>[lang]</code>
-                        <a href="https://github.com/apache/commons-lang/blob/master/README.md">README.md</a>:
-                        <a href="https://commons.apache.org/mail-lists.html">user mailing list</a>.
-                    </li>
-                </ul>
-                <li class="fragment">Email someone directly.</li>
-            </ol>
-        </section>
-
-        <!-- SLIDE 12 -->
-        <section>
-            <p>
-                <img src="images/mail-lists.png" style="max-width: 800px;"/>
-            </p>
-        </section>
-
-        <!-- SLIDE 13 -->
-        <section>
-            <h2>How do I figure out what to work on?</h2>
-            <ul>
-                <li class="fragment">Tests, tests, and more tests.</li>
-                <ul>
-                    <li class="fragment">No one has 100% coverage, there's always room for test improvements.</li>
-                </ul>
-                <li class="fragment">Find a ticket. My first major contribution other than tests was
-                    <a href="https://issues.apache.org/jira/browse/LANG-1252">LANG-1252</a>.
-                    <ul>
-                        <li class="fragment">After 4 months of writing tests.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <!-- SLIDE 14 -->
-        <section>
-            <h2>Becoming familiar with the community</h2>
-            <ul>
-                <li class="fragment">Read the documentation on all project aspects.</li>
-                <li class="fragment">
-                    Don't be afraid to weigh in on mailing list discussions, but do be polite
-                    <ul>
-                        <li class="fragment">Try to stick to +/- 0 votes</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <!-- SLIDE 15 -->
-        <section>
-            <h2>On ASF Style voting.</h2>
-            <ul>
-                <li class="fragment"><strong>+1</strong> - Yes.</li>
-                <li class="fragment"><strong>+0</strong> - I'm ok with this, but I think it has issues.</li>
-                <li class="fragment"><strong>-0</strong> - I'm ok with this, but I'd like to express a dissenting
-                    opinion because I see potentially veto-worthy issues.
-                </li>
-                <li class="fragment">
-                    <string>-1</string>
-                    - Veto.
-                </li>
-            </ul>
-        </section>
-
-        <!-- SLIDE 16 -->
-        <section>
-            <h2>On ASF Style Voting.</h2>
-            <ul>
-                <li class="fragment">Voting used in a variety of capacities:
-                    <ul>
-                        <li class="fragment">Concensus building (non-formal)</li>
-                        <li class="fragment">Proposals (formal): -1 veto's the proposal all together</li>
-                        <li class="fragment">[LAZY] votes - silence gives assent</li>
-                        <li class="fragment">Package Releases.</li>
-                    </ul>
-                </li>
-                <li class="fragment">With package releases, majority approval holds, provided there are
-                   at least 3 PMC +1 votes. "-1's" can transpire, but we in Commons take them quite seriously.
-                </li>
-            </ul>
-        </section>
-
-        <!-- SLIDE 17 -->
-        <section>
-        <h2>Regarding privileges</h2>
-        <h4>(commit, voting, establishing votes, ect.)</h4>
-            <p class="fragment">
-                <br/>
-                Clearly this is all community dependent, but commons (and Apache generally) has the following:
-            </p>
-            <ul>
-                <li class="fragment"><strong>user</strong> - anyone consuming the software.</li>
-                <li class="fragment"><strong>contributor</strong> - anyone who has made a contribution.</li>
-                <li class="fragment">
-                    <strong>committer</strong> - anyone who can commit directly
-                    <ul>
-                        <li class="fragment">Can make any changes to site or component.</li>
-                        <li class="fragment">Can present votes.</li>
-                        <li class="fragment">Can perform releases (according to the process).</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <!-- SLIDE 18 -->
-        <section>
-            <h2>Regarding privileges</h2>
-            <h4>(commit, voting, establishing votes, ect.)</h4>
-            <ul>
-                <li class="fragment"><strong>committee member</strong> - has voting privileges
-                    <ul>
-                        <li class="fragment">Voting privileges particularly matter with releases, new components,
-                            and such.
-                        </li>
-                        <li class="fragment">Proposing new committers.</li>
-                    </ul>
-                </li>
-                <li class="fragment"><strong>committee chair</strong> - prepares the quarterly reports......ugh.</li>
-            </ul>
-        </section>
-
-        <!-- SLIDE 19 -->
-        <section>
-            <h2>After I got commit rights.</h2>
-            <ul>
-                <li class="fragment">Asked Benedikt, and Gary what they thought I should do.</li>
-                <li class="fragment"><code>[text]</code>, a sandbox component, needed to be taken out.</li>
-                <li class="fragment">Read up on release process:
-                    <a href="http://commons.apache.org/releases/index.html">Releasing Components</a>.
-                    <ul>
-                        <li class="fragment">Beta release.</li>
-                        <li class="fragment">Two dot releases.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <!-- SLIDE 20 -->
-        <section>
-            <h1>Questions?</h1>
-            <h4 class="fragment">Appetite for exploring commons?</h4>
-        </section>
     </div>
 </div>
 
